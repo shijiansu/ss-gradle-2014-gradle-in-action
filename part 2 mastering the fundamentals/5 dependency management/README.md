@@ -1,6 +1,6 @@
-# cargo
+## cargo
 
-This is an old tool (2021), anyway, try to build the demo as well to practice the features of Gradle.
+This is an old tool (as in 2021), anyway, try to build the demo as well to practice the features of Gradle.
 
 - https://codehaus-cargo.github.io/cargo/Features.html
 - https://github.com/bmuschko/gradle-cargo-plugin

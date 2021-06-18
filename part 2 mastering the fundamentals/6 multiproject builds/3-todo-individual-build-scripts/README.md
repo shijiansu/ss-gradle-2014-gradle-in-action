@@ -1,3 +1,12 @@
+## Key files
+
+- settings.gradle
+- model/build.gradle
+- repository/build.gradle
+- web/build.gradle
+
+## Demo
+
 ```bash
 gradle wrapper7
 

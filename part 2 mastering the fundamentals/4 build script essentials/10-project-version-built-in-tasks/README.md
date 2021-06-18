@@ -1,3 +1,10 @@
+## Key files
+
+- build.gradle
+- version.properties
+
+## Demo
+
 ```bash
 gradle wrapper7
 

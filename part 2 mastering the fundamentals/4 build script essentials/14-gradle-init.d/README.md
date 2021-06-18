@@ -1,9 +1,18 @@
+## Key files
+
+- build-announcements.gradle
+
+## init.d
+
+Seems this can do the common initialization logic
+
+## build-announcements.gradle
+
 The file build-announcements.gradle needs to be copied to the directory `<USER_HOME>/.gradle/init.d`
 
 Initialization scripts are run before any of your build script logic has been evaluated and executed. You’ll write an initialization script that applies the plugin to any of your projects without manual intervention.
 
 Gradle will execute every initialization script it finds under init.d as long as the file extension matches .gradle.
-
 
 > The announce and build-announcements plugins have been removed 
 >

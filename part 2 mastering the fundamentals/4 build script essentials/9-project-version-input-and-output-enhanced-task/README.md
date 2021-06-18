@@ -1,8 +1,15 @@
+## Key files
+
+- build.gradle
+- version.properties
+
+## Demo
+
 ```bash
 gradle wrapper7
 ```
 
-# Custom tasks
+## Custom tasks
 
 Consist of two components,
 
@@ -17,7 +24,7 @@ Consist of two components,
 ./gradlew -q # Version: 0.1-SNAPTHOT
 ```
 
-# Using Task types
+## Using Task types
 
 Gradle’s built-in task types are derived classes from DefaultTask
 

@@ -1,10 +1,18 @@
+## Key files
+
+- build.gradle
+- version.properties
+
+## Demo
+
 ```bash
 gradle wrapper7
 ```
 
-# Task rules in practice
+## Task rules in practice
 
 Some of Gradle’s core plugins make good use of `task rules`. One of the task rules the Java plugins define is `clean<TaskName>`, which deletes the output of a specified task. For example, running gradle `cleanCompileJava` from the command line deletes all production code class files.
+
 
 ```bash
 ./gradlew -i incrementMajorVersion
