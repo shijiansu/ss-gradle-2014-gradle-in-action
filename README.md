@@ -1,14 +1,14 @@
-# 2014.gradle-in-action
+# gradle-in-action-2014
 
 ![](https://img.shields.io/badge/language-groovy-blue)
 ![](https://img.shields.io/badge/technology-gradle-blue)
 ![](https://img.shields.io/badge/development%20year-2021-orange)
 
-![](https://img.shields.io/github/languages/top/shijiansu/2014.gradle-in-action)
-![](https://img.shields.io/github/languages/count/shijiansu/2014.gradle-in-action)
-![](https://img.shields.io/github/languages/code-size/shijiansu/2014.gradle-in-action)
-![](https://img.shields.io/github/repo-size/shijiansu/2014.gradle-in-action)
-![](https://img.shields.io/github/last-commit/shijiansu/2014.gradle-in-action?color=red)
+![](https://img.shields.io/github/languages/top/shijiansu/gradle-in-action-2014)
+![](https://img.shields.io/github/languages/count/shijiansu/gradle-in-action-2014)
+![](https://img.shields.io/github/languages/code-size/shijiansu/gradle-in-action-2014)
+![](https://img.shields.io/github/repo-size/shijiansu/gradle-in-action-2014)
+![](https://img.shields.io/github/last-commit/shijiansu/gradle-in-action-2014?color=red)
 
 ## Outline
 
