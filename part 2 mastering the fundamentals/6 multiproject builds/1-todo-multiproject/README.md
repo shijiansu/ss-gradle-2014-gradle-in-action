@@ -1,9 +1,16 @@
-# Controlling the settings file search behavior
+## Key files
+
+- settings.gradle
+- repository/build.gradle
+
+## Controlling the settings file search behavior
 
 There are two command-line parameters that are helpful in determining the search behavior for a settings file:
 
 - `-u, --no-search-upward`: Tells Gradle not to search for a settings file in parent directories. This option is useful if you want to avoid the performance hit of searching all parent directories in a deeply nested project structure.
 - `-c, --settings-file`: Specifies the location of the settings file. You may want to use this option if your settings filename deviates from the standard naming convention.
+
+## Demo
 
 ```bash
 gradle wrapper7

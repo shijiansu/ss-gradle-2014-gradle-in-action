@@ -1,3 +1,11 @@
+## Key files
+
+- settings.gradle
+- InMemoryToDoRepositorySpec.groovy
+- InMemoryToDoRepositoryNGTest.java
+- InMemoryToDoRepositoryTest.java
+- repository/build.gradle
+
 ```bash
 gradle wrapper7
 
@@ -9,10 +17,8 @@ gradle wrapper7
 
 # refer to https://stackoverflow.com/a/16921750 to see how to aggregate for all sub projects
 ./gradlew :repository:aggregateTestReports
-
 open ./repository/build/reports/tests/test/index.html
 
-./gradlew 
 # <taskName>.single=<testNamePattern>
 ./gradlew clean -Dtest.single=""**/*Spec.groovy"" :repository:test # still execute all test... look like
 
@@ -20,7 +26,8 @@ open ./repository/build/reports/tests/test/index.html
 open ./repository/build/reports/tests/test/index.html
 ```
 
-# How to run a single test only
+## How to run a single test case only
+
 ```bash
 # not working...
 # <taskName>.single=<testNamePattern>
@@ -40,7 +47,8 @@ gradle test --tests *IntegTest.singleMethod
 gradle someTestTask --tests *UiTest someOtherTestTask --tests *WebTest*ui
 ```
 
-Another way is to set test filters, not verify yet
+## Another way is to set test filters, not verify yet
+
 ```groovy
 apply plugin: 'java'
  
@@ -70,7 +78,8 @@ test {
 }
 ```
 
-# How to remotely debug
+## How to remotely debug
+
 ```bash
 ./gradlew -Dtest.debug :repository:test 
 ```

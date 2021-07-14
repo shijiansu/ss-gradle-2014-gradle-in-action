@@ -1,3 +1,11 @@
+## Key files
+
+- settings.gradle
+- InMemoryToDoRepositoryTest.java
+- repository/build.gradle
+
+## Demo
+
 ```bash
 gradle wrapper7
 

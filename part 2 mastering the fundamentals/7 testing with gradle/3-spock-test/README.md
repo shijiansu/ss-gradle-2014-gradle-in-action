@@ -1,4 +1,10 @@
-# JDK 13 compatibility issue
+## Key files
+
+- settings.gradle
+- InMemoryToDoRepositorySpec.groovy
+- repository/build.gradle
+
+## JDK 13 compatibility issue
 
 Using Gradle 7.0.
 
@@ -6,8 +12,10 @@ Using Gradle 7.0.
 not work well with JDK 13, 2 options here,
 
 1. Downgrade JDK to 11, or
-2. Downgrade to `org.spockframework:spock-core:1.3-groovy-2.4` and `org.codehaus.groovy:groovy-all:2.4.21'
-   ` with JDK 13
+2. Downgrade to `org.spockframework:spock-core:1.3-groovy-2.4` and `org.codehaus.groovy:groovy-all:2.4.21`
+   with JDK 13
+
+## Demo
 
 ```bash
 gradle wrapper7

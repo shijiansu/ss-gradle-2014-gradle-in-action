@@ -18,6 +18,7 @@ public class InMemoryToDoRepositoryTest {
 
     @Test
     public void testInsertToDoItems() {
+        // parse system properties
         int items = System.getProperty("items") != null ? Integer.parseInt(System.getProperty("items")) : 1;
         createAndInsertToDoItems(items);
         List<ToDoItem> toDoItems = inMemoryToDoRepository.findAll();

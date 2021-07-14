@@ -1,3 +1,10 @@
+## Key files
+
+- build.gradle
+- version.properties
+
+## Demo
+
 ```bash
 gradle wrapper7
 
@@ -17,7 +24,7 @@ Version: 0.1
 ./gradlew -q makeReleaseVersion1 # do the same thing as "makeReleaseVersion"
 ```
 
-# Task inputs/outputs evaluation
+## Task inputs/outputs evaluation
 
 Remember, task inputs and outputs evaluates during the configuration phase to wire up the task dependencies.
 That’s why they need to be defined in a configuration block.

@@ -8,11 +8,13 @@ dependencies {
 }
 
 test {
+    // providing system properties and JVM parameters
     systemProperty 'items', '20' // systems variable
     jvmArgs '-Xms128m', '-Xmx256m' // JVM heap
 
     // access the TestLoggingContainer interface
     testLogging {
+        // turn on logging of standard output and error steams
         showStandardStreams = true
         // show all exception stack information
         exceptionFormat 'full'
@@ -28,4 +30,12 @@ test {
 // in forked testing process
 def determineMaxParallelForks() {
     (Runtime.runtime.availableProcessors() / 2) < 1 ? 1 : Runtime.runtime.availableProcessors() / 2
+}
+
+// execute code after test suite is executed
+test.afterSuite { TestDescriptor suite, TestResult result ->
+    if (!suite.parent && result.getTestCount() > 0) {
+        long elapsedTestTime = result.getEndTime() - result.getStartTime()
+        //announce.announce("Elapsed time for execution of ${result.getTestCount()} test(s): $elapsedTestTime ms", 'local')
+    }
 }
