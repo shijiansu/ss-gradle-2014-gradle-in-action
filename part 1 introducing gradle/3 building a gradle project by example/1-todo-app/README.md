@@ -7,7 +7,7 @@
 IntelliJ -> Gradle Plugin -> import build.gradle -> Reload all Gradle Projects -> make build.gradle regonize by the IntelliJ with code syntax highlights and auto completion
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 gradle build
 

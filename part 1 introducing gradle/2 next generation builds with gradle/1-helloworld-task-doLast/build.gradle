@@ -1,5 +1,4 @@
-// extra customizing for the Gradle wrapper with v7.0
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }
 

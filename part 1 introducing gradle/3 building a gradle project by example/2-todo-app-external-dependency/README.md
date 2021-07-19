@@ -5,7 +5,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 # run the application and keep the System in
 gradle run # option 1

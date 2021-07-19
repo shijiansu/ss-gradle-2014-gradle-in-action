@@ -5,7 +5,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 # option quiet with –q
 gradle -q helloWorld
