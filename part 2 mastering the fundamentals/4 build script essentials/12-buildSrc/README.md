@@ -8,5 +8,5 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 ```

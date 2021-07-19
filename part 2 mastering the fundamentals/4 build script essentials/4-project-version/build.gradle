@@ -27,6 +27,6 @@ printVersion.doFirst { println "First action" }
 // after the "printVersion"
 printVersion.doLast { println "Last action" }
 
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

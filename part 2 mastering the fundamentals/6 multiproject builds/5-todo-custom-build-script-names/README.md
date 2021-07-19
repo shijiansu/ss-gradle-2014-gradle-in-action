@@ -8,7 +8,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 # key difference
 cat master/settings.gradle # set the child rpoject build file names

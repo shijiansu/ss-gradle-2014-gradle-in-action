@@ -7,7 +7,7 @@
 
 ```bash
 cd master
-gradle wrapper7
+gradle wrapper
 
 # key difference
 cat master/settings.gradle # includeFlat

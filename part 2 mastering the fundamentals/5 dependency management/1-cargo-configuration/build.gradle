@@ -95,8 +95,6 @@ configurations.cargo.resolutionStrategy {
     cacheDynamicVersionsFor 0, 'seconds' // cache timeout for 0s -> no cache, always get latest
 }
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

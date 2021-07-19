@@ -6,7 +6,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew makeReleaseVersion
 # after this execution, it changes

@@ -27,8 +27,6 @@ task printVersion doLast {
     logger.quiet "Version: $version"
 }
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

@@ -4,6 +4,6 @@ setDescription("myProject")
 // groovy syntax
 println "Description of project $name: " + project.description
 
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

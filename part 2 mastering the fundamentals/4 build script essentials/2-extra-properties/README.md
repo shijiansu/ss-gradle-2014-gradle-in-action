@@ -5,7 +5,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew
 > Configure project :

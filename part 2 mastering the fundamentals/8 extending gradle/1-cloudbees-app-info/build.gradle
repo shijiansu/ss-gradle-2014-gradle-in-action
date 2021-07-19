@@ -1,0 +1,6 @@
+// get from cloudbees.gradle
+apply from: 'cloudbees.gradle'
+
+wrapper {
+    gradleVersion = '7.0'
+}

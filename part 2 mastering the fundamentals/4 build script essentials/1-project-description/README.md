@@ -5,7 +5,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew -q
 Description of project 1-project-description: myProject

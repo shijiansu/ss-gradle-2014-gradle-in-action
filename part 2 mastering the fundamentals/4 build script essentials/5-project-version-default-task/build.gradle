@@ -45,8 +45,6 @@ task one doLast { println "first" }
 task two doLast { println "second" }
 one.finalizedBy two
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

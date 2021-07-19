@@ -7,7 +7,7 @@
 The file gradle.properties needs to be copied to the directory <USER_HOME>/.gradle
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew printVersion1
 > Task :printVersion1

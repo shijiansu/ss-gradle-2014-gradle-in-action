@@ -6,7 +6,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew release # will invoke the hook
 ./gradlew release2 # will invoke the listener

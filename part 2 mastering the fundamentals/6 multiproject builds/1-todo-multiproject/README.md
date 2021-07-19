@@ -13,7 +13,7 @@ There are two command-line parameters that are helpful in determining the search
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew -q projects
 ------------------------------------------------------------

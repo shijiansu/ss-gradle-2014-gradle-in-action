@@ -26,8 +26,6 @@ task makeReleaseVersion(type: ReleaseVersionTask) {
     destFile = versionFile
 }
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

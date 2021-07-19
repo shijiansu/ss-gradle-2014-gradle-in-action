@@ -38,8 +38,6 @@ repositories {
     flatDir(dir: "${System.properties['user.home']}/libs/cargo", name: 'Local libs directory')
 }
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

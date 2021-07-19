@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+// Declares provided configurations
+configurations {
+    provided
+    testProvided.extendsFrom provided
+}
+
+sourceSets {
+    main {
+        // Added provided configurations to compilation classpath
+        compileClasspath += configurations.provided
+    }
+
+    test {
+        // Added provided configurations to compilation classpath
+        compileClasspath += configurations.testProvided
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    provided 'mysql:mysql-connector-java:5.1.8'
+}
+
+wrapper {
+    gradleVersion = '7.0'
+}

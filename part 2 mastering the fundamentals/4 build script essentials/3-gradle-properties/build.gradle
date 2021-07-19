@@ -5,6 +5,6 @@ task printGradleProperty doLast {
     println "Second property: $someOtherProp"
 }
 
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

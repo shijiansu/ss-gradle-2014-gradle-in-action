@@ -8,7 +8,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew projects
 > Task :projects

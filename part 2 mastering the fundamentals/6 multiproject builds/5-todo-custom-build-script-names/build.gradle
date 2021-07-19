@@ -7,8 +7,6 @@ subprojects {
     apply plugin: 'java'
 }
 
-// ----------
-
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }

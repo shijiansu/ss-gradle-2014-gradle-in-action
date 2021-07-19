@@ -7,7 +7,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 # refer to repository/build.gradle for configuration
 # only test one of the module

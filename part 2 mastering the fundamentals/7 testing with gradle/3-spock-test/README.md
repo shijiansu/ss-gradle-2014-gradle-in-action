@@ -18,7 +18,7 @@ not work well with JDK 13, 2 options here,
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 # Gradle uses the same testing report format
 ./gradlew :repository:test

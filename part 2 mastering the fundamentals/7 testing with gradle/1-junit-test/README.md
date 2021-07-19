@@ -7,7 +7,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 
 ./gradlew :repository:test
 ./gradlew :repository:test -i

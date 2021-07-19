@@ -1,0 +1,47 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':model')
+    testImplementation 'junit:junit:4.11'
+}
+
+// lifecycle hook
+// beforeSuite: before a test suite is executed
+// afterSuite: after a test suite is executed
+// beforeTest: before a test class is executed
+// afterTest: after a test class is executed
+test.afterSuite { TestDescriptor suite, TestResult result ->
+    if (!suite.parent && result.getTestCount() > 0) {
+        long elapsedTestTime = result.getEndTime() - result.getStartTime()
+        project.logger.info("Elapsed time for execution of ${result.getTestCount()} test(s): ${elapsedTestTime} ms", 'local')
+    }
+}
+
+test.addTestListener(new NotificationTestListener(project))
+
+class NotificationTestListener implements TestListener {
+    final Project project
+
+    NotificationTestListener(Project project) {
+        this.project = project
+    }
+
+    @Override
+    void afterSuite(TestDescriptor suite, TestResult result) {
+        if (!suite.parent && result.getTestCount() > 0) {
+            long elapsedTestTime = result.getEndTime() - result.getStartTime()
+            project.logger.info("Elapsed time for execution of ${result.getTestCount()} test(s): $elapsedTestTime ms", 'local')
+        }
+    }
+
+    @Override
+    void afterTest(TestDescriptor testDescriptor, TestResult result) {}
+
+    @Override
+    void beforeSuite(TestDescriptor suite) {}
+
+    @Override
+    void beforeTest(TestDescriptor testDescriptor) {}
+}

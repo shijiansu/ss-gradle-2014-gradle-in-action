@@ -6,7 +6,7 @@
 ## Demo
 
 ```bash
-gradle wrapper7
+gradle wrapper
 ```
 
 ## Task rules in practice

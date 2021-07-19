@@ -1,0 +1,48 @@
+apply from: 'databaseSetup.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':model')
+    runtimeOnly 'com.h2database:h2:1.3.170'
+    testImplementation 'junit:junit:4.11'
+}
+
+// make it only deal with the unit test
+test {
+    exclude '**/*IntegTest.class'
+    reports.html.destination = file("$reports.html.destination/unit")
+    reports.junitXml.destination = file("$reports.junitXml.destination/unit")
+}
+
+// If define a different folder for the integration test source code, then define the source set
+//sourceSets {
+//    integrationTest {
+//        java.srcDir file('src/integTest/java')
+//        resources.srcDir file('src/integTest/resources')
+//        compileClasspath = sourceSets.main.output + configurations.testRuntime
+//        runtimeClasspath = output + compileClasspath
+//    }
+//}
+
+// create a task for the integration test, seperate the report destinations
+task integrationTest(type: Test) {
+    description = 'Runs the integration tests.'
+    group = 'verification'
+    include '**/*IntegTest.class'
+    reports.html.destination = file("$reports.html.destination/integration")
+    reports.junitXml.destination = file("$reports.junitXml.destination/integration")
+    dependsOn startAndPrepareDatabase
+    finalizedBy stopDatabase
+}
+
+tasks.withType(Test) {
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat 'full'
+    }
+}
+
+check.dependsOn integrationTest

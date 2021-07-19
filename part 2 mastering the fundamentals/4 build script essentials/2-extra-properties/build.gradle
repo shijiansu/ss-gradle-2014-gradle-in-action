@@ -12,6 +12,6 @@ assert myProp == 'myValue'
 println project.someOtherProp
 ext.someOtherProp = 567
 
-task wrapper7(type: Wrapper) {
+wrapper {
     gradleVersion = '7.0'
 }
