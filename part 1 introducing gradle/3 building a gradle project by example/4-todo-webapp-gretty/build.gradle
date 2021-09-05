@@ -6,7 +6,7 @@
 
 apply plugin: 'java'
 apply plugin: 'war'
-//apply plugin: 'jetty' // retired and replaced by gretty
+// apply plugin: 'jetty' // retired and replaced by gretty
 
 // option 2 to use the plugin
 // https://github.com/gretty-gradle-plugin/gretty

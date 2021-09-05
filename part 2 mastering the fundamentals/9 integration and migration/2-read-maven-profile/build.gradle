@@ -1,7 +1,7 @@
 def getMavenSettingsCredentials = {
     File mavenSettings = new File(projectDir, 'settings.xml')
     def xmlSlurper = new XmlSlurper()
-    xmlSlurper.parse(mavenSettings)
+    xmlSlurper.parse(mavenSettings) // 解释settings文件
 }
 
 task printAppServerHome {

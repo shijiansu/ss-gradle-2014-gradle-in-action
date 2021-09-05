@@ -1,0 +1,9 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.cloudbees:cloudbees-api-client:1.4.0'
+    testImplementation localGroovy()
+    testImplementation 'org.spockframework:spock-core:0.6-groovy-1.8'
+}

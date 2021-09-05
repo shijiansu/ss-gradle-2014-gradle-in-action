@@ -1,0 +1,15 @@
+apply plugin: 'war'
+// apply plugin: 'jetty'
+
+apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':repository')
+    implementation project(':model')
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    runtimeOnly 'javax.servlet:jstl:1.1.2'
+}

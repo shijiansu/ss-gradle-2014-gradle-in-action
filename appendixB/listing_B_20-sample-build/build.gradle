@@ -7,5 +7,5 @@ repositories {
 }
 
 dependencies {
-    compile 'commons-codec:commons-codec:1.6'
+    implementation 'commons-codec:commons-codec:1.6'
 }

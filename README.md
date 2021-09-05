@@ -12,7 +12,7 @@
 
 ## Outline
 
-- 
+- Examples are too out-dated, need lots of fixing, just for a very basic learning only
 
 ## Source code
 
@@ -22,9 +22,7 @@ The book publishes at 2014, the GitHub source codes does not update. Going to,
 
 - Fix the code with the latest version of Gradle
 - Reorganize the code examples
-- Provide more instruction and guiding
-
-## 
+- Provide more instruction and guiding 
 
 ### To understand the Gradle build lifecycle phases
 
