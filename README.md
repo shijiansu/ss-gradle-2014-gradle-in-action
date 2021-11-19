@@ -1,14 +1,6 @@
-# devops-build-gradle-2014-gradle-in-action
-
 ![](https://img.shields.io/badge/language-groovy-blue)
 ![](https://img.shields.io/badge/technology-gradle-blue)
 ![](https://img.shields.io/badge/development%20year-2021-orange)
-
-![](https://img.shields.io/github/languages/top/shijiansu/devops-build-gradle-2014-gradle-in-action)
-![](https://img.shields.io/github/languages/count/shijiansu/devops-build-gradle-2014-gradle-in-action)
-![](https://img.shields.io/github/languages/code-size/shijiansu/devops-build-gradle-2014-gradle-in-action)
-![](https://img.shields.io/github/repo-size/shijiansu/devops-build-gradle-2014-gradle-in-action)
-![](https://img.shields.io/github/last-commit/shijiansu/devops-build-gradle-2014-gradle-in-action?color=red)
 
 ## Outline
 
