@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/language-groovy-blue)
-![](https://img.shields.io/badge/technology-gradle-blue)
 ![](https://img.shields.io/badge/development%20year-2021-orange)
 
 ## Outline
@@ -8,7 +6,7 @@
 
 ## Source code
 
-- https://github.com/bmuschko/gradle-in-action-source
+- <https://github.com/bmuschko/gradle-in-action-source>
 
 The book publishes at 2014, the GitHub source codes does not update. Going to,
 
